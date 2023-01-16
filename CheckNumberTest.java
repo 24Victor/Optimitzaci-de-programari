@@ -1,6 +1,6 @@
-public class CheckNumber {
+public class CheckNumberTest {
     private double number;
-    public CheckNumber(double num) {
+    public CheckNumberTest(double num) {
     this.number = num;
     }
     public double comprovaSigne() {
