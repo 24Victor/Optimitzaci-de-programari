@@ -1,16 +1,28 @@
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+/** 
+ * @author Victor Zheng
+ * @version 1.0
+ * @since 30-01-2023
+ */
 public class CheckNumberTest {
-    private double number;
-    public CheckNumberTest(double num) {
-    this.number = num;
+       
+    @Test
+    public void testValorPositiu(){
+        CheckNumber check = new CheckNumber(50);
+        double val = check.comprovaSigne();
+        assertEquals(1.0, val, 0.0);
     }
-    public double comprovaSigne() {
-    double status;
-    if (this.number < 0)
-    status = -1;
-    else if (this.number == 0)
-    status = 0;
-    else
-    status = 1;
-    return status;
+    @Test
+    public void testValorNegatiu(){
+        CheckNumber check = new CheckNumber(-30);
+        double val = check.comprovaSigne();
+        assertEquals (-1.0, val,0.0);
     }
+    @Test
+    public void testValorZero(){
+        CheckNumber check = new CheckNumber(0);
+        double val = check.comprovaSigne();
+        assertEquals(0.0, val, 0.0);
     }
+}
