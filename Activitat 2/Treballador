@@ -14,7 +14,8 @@ class Treballador {
     int tipusTreballador; 
     float nominaTreballador; 
     int horesExtresTreballador; 
-// Constructor amb arguments, alternatiu al constructor per defecte Treballador(String nom, int tipus, float nomina, int hores) { nomTreballador = nom; 
+// Constructor amb arguments, alternatiu al constructor per defecte Treballador(String nom, int tipus, 
+//float nomina, int hores) { nomTreballador = nom; 
     tipusTreballador = tipus; 
     nominaTreballador = nomina; 
     horesExtresTreballador = hores; 
