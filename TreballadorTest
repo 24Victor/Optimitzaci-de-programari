@@ -75,7 +75,8 @@ import org.junit.jupiter.api.Test;
 
         @Test 
         public void testTipusTreballadorIncorrecte() { 
-        /// ACABEU-LO 
+        
+
         } 
 
         @Test 
