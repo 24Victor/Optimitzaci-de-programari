@@ -24,6 +24,7 @@ class Treballador {
 // culpa d'haver declarat l'anterior 
     Treballador() { 
 } 
+
         void setNom(String nom) throws Exception { 
 // Si la longitud del nou nom es inferior a tres caracters llença excepcio 
 // avisant del problema 
