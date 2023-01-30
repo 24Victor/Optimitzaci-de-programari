@@ -1,3 +1,8 @@
+/** 
+ * @author Victor Zheng
+ * @version 1.0
+ * @since 30-01-2023
+ */
 public class CheckNumber { 
     private double number; 
     public CheckNumber(double num) { 
