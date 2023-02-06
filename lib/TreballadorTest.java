@@ -1,4 +1,6 @@
-import static org.junit.Assert.assertEquals;
+package lib;
+
+import static org.junit.Assert.*;
 import org.junit.Test;
 /** 
  * @author Victor Zheng
