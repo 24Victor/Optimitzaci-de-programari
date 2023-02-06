@@ -4,59 +4,55 @@
 * @author INSMontsià
 *
 */
-public class CostPersonal {
-// static enum TipusTreballador{
-// DIRECTOR, SUBDIRECTOR, BASE
-// }
-static float CalculaCostDelPersonal(Treballador treballadors[]) {
-float costFinal = 0;
-Treballador treballador;
-for (int i = 0; i < treballadors.length; i++) {
-treballador = treballadors[i];
+    public class CostPersonal {
+        // static enum TipusTreballador{
+        // DIRECTOR, SUBDIRECTOR, BASE
+        // }
+        static float CalculaCostDelPersonal(Treballador treballadors[]) {
+            float costFinal = 0;
+            Treballador treballador;
+            for (int i = 0; i < treballadors.length; i++) {
+                treballador = treballadors[i];
 
-if (treballador.getTipusTreballador() ==
+                if (treballador.getTipusTreballador() ==
 
-Treballador.DIRECTOR ||
+                Treballador.DIRECTOR ||
 
-treballador.getTipusTreballador() ==
+                treballador.getTipusTreballador() ==
 
-Treballador.SUBDIRECTOR) {
+                    Treballador.SUBDIRECTOR) {
 
-costFinal += treballador.getNomina();
-} else {
-costFinal += treballador.getNomina() +
-(treballador.getHoresExtres() * 20);
+                        costFinal += treballador.getNomina();
+                        } else {
+                        costFinal += treballador.getNomina() +
+                        (treballador.getHoresExtres() * 20);
 
-}
-}
-return costFinal;
-}
-static float CostTreballador(Treballador treballador) {
-if (treballador.getTipusTreballador() == Treballador.DIRECTOR
+                }
+            }   
+            return costFinal;
+            }
+            static float CostTreballador(Treballador treballador) {
+                if (treballador.getTipusTreballador() == Treballador.DIRECTOR
 
-||
+                treballador.getTipusTreballador() ==
 
-treballador.getTipusTreballador() ==
+                Treballador.SUBDIRECTOR) {
 
-Treballador.SUBDIRECTOR) {
-
-return treballador.getNomina();
-} else {
-
-    return treballador.getNomina() +
-    
-    (treballador.getHoresExtres() *
-    20);
-    
+            return treballador.getNomina();
+            } else {
+                return treballador.getNomina() +
+                
+                (treballador.getHoresExtres() *
+                20);
+                }
+                }
+         static float CalculaCostDelPersonal2(Treballador treballadors[]) {
+            // Versio refactoritzada del mètode anterior
+            float costFinal = 0;
+            Treballador treballador;
+            for (int i = 0; i < treballadors.length; i++) {
+                costFinal = costFinal + CostTreballador(treballadors[i]);
+                }
+                return costFinal;
+        }       
     }
-    }
-    static float CalculaCostDelPersonal2(Treballador treballadors[]) {
-    // Versio refactoritzada del mètode anterior
-    float costFinal = 0;
-    Treballador treballador;
-    for (int i = 0; i < treballadors.length; i++) {
-    costFinal = costFinal + CostTreballador(treballadors[i]);
-    }
-    return costFinal;
-}
-}
