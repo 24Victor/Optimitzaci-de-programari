@@ -6,7 +6,7 @@ import org.junit.Test;
  * @since 30-01-2023
  */
 
-    class TreballadorTest { 
+    public class TreballadorTest { 
 
         @Test 
         public void testNomTreballadorIncorrecte() { 
