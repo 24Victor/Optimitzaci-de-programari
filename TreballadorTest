@@ -1,5 +1,10 @@
-import static org.junit.jupiter.api.Assertions.*; 
-import org.junit.jupiter.api.Test; 
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+/** 
+ * @author Victor Zheng
+ * @version 1.0
+ * @since 30-01-2023
+ */
 
     class TreballadorTest { 
 
@@ -75,14 +80,23 @@ import org.junit.jupiter.api.Test;
 
         @Test 
         public void testTipusTreballadorIncorrecte() { 
-        
 
+            int tipusTreballadorIncorrecte = 8;
+            Treballador treballador = new Treballador();
+
+            treballador.setTipusTreballador(tipus)
+
+            assertEquals(tipusTreballadorIncorrecte, treballador.setTipusTreballador(), "Els dos valors de la nomina han de coincidir!!!")
         } 
 
         @Test 
         public void testTipusTreballadorCorrecte() { 
 
-        /// ACABEU-LO 
+            int TipusTreballadorCorrecte = 10;
+            Treballador treballador = new Treballador();
+
+            treballador.setTipusTreballadorCorrecte(tipus)
+            assertEquals(tipusTreballadorCorrecte, treballador.setTipusTreballadorCorrecte(), "Els dos valors de la nomina han de coincidir!!!")
         } 
         } 
     
