@@ -1,4 +1,6 @@
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
+
 import org.junit.Test;
 /** 
  * @author Victor Zheng
@@ -6,7 +8,7 @@ import org.junit.Test;
  * @since 30-01-2023
  */
 
-    public class Treballador { 
+    class Treballador { 
 
         @Test 
         public void testNomTreballadorIncorrecte() { 
@@ -81,12 +83,12 @@ import org.junit.Test;
         @Test 
         public void testTipusTreballadorIncorrecte() { 
 
-            int tipusTreballadorIncorrecte = 8;
+            int tipusTreballador = 8;
             Treballador treballador = new Treballador();
 
-            treballador.setTipusTreballador(tipus)
+            treballador.setTipusTreballador(tipusTreballador)
 
-            assertEquals(tipusTreballadorIncorrecte, treballador.setTipusTreballador(), "Els dos valors de la nomina han de coincidir!!!")
+            assertEquals(tipusTreballador, treballador.getTipusTreballador(), "Els dos valors de la nomina han de coincidir!!!")
         } 
 
         @Test 
@@ -95,8 +97,8 @@ import org.junit.Test;
             int TipusTreballadorCorrecte = 10;
             Treballador treballador = new Treballador();
 
-            treballador.setTipusTreballador(tipus)
-            assertEquals(tipusTreballador, treballador.setTipusTreballador(), "Els dos valors de la nomina han de coincidir!!!")
+            treballador.setTipusTreballadorCorrecte(tipus)
+            assertEquals(tipusTreballadorCorrecte, treballador.setTipusTreballadorCorrecte(), "Els dos valors de la nomina han de coincidir!!!")
         } 
         } 
     
