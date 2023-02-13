@@ -65,7 +65,12 @@ class Treballador {
     throw new Exception("Tipus de treballador no vàlid");
     }
     }
-    int getTipusTreballador() {
+    int getTipusTreballador(int tipusTreballador2) {
     return tipusTreballador;
+    }
+    public void getHoresExtres(int horesExtres) {
+    }
+    public float getTipusTreballador() {
+        return 0;
     }
 }
