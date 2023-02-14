@@ -1,14 +1,10 @@
-import static org.junit.Assert.*;
-import org.junit.Assert;
-import org.junit.Test;
-
 /**
 * Classe per a calcular el cost total de les nomines del personal
 *
 * @author INSMontsià
 *
 */
-public class CostPersonalTest {
+public class CostPersonal {
     // static enum TipusTreballador{
     // DIRECTOR, SUBDIRECTOR, BASE
     // }
