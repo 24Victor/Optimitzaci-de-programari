@@ -6,11 +6,6 @@ import org.junit.Test;
  * @version 1.0
  * @since 30-01-2023
  */
-/** 
- * @author Victor Zheng
- * @version 1.0
- * @since 30-01-2023
- */
 
 public class calculaCostPersonalTest {
     Treballador treballador1 = new Treballador(null, Treballador.DIRECTOR, 1200, 0);
