@@ -7,7 +7,7 @@ import org.junit.Test;
  * @since 30-01-2023
  */
 
-public class CompteCorrentTest {
+public class compteCorrentTest {
     private int saldo;
     private String contrasenya;
     // Constructor
@@ -17,8 +17,10 @@ public class CompteCorrentTest {
     }
     
     // Rebem els diners
+    @Test
     public int diposita(int pasta) {
-        // COMPLETAR
+        saldo += pasta;
+        return saldo;
     }
         // Si la contrasenya és correcta i tenim prou diners, els restem del
         saldo i
