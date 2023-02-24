@@ -7,7 +7,7 @@ import org.junit.Test;
  * @since 30-01-2023
  */
 
-public class compteCorrentTest {
+public class CompteCorrentTest {
     @Test
     public void testConstructor() {
         int saldoInicial = 100;
